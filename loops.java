@@ -7,7 +7,7 @@ class Loops
   public static void whleLoopExample()
   {
     // I'm showing Jeff cool shit
-	int x = 0;
+	int y = 0;
   }
   public static void forLoopExample()
   {
