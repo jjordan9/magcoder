@@ -9,7 +9,7 @@ class ABC
 	{
 		int sum;
 		double avg;
-		System.out.println("Enter student name here: ");
+		System.out.println("Please enter student name here: ");
 		Student = in.nextLine();
 		sum=GetTests();
 		avg=CalcAvg(sum);
