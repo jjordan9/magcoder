@@ -2,16 +2,39 @@ class Loops
 {
   public static void main(String[] args)
   {
-    forLoopExample();
+    whileLoopExample();
+    //forLoopExample();
   }
-  public static void whleLoopExample()
+  public static void whileLoopExample()
   {
-    // I'm showing Jeff cool shit
-	int x = 0;
+    System.out.println("whileLoopExample.. lets watch i!");
+    int i = 0;
+    //System.out.println("(start) int i is:"+i+", and boolean b is:"+(i != 10)+".");
+
+    while (i != 10)
+    {
+      //System.out.println("(in loop) int i is:"+i+", and boolean b is:"+(i != 10)+".");
+      i++;
+    }
+
+    System.out.println("(end) int i is:"+i+", and boolean b is:"+(i != 10)+".");
+
+    System.out.println("finished whileLoopExample.");
   }
+  public static void whileLoopChallenge1()
+  {
+    // Produce and print the sum of all numbers between 1 and 10
+    // Your output of the program should be one line:
+    // The sum of the numbers between 1 and 10 is X
+    // (where x is the sum)
+    
+  }
+
   public static void forLoopExample()
   {
     System.out.println("forLoopExample.. lets watch i!");
+    // for(expr1; expr2; expr3)
+    // expr1 - initial expression
     for(int i = 0; i != 10; i++)
     {
       System.out.println("my super cool variable i is: "+i+".");
