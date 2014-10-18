@@ -27,7 +27,6 @@ class Loops
     // Your output of the program should be one line:
     // The sum of the numbers between 1 and 10 is X
     // (where x is the sum)
-    
   }
 
   public static void forLoopExample()
