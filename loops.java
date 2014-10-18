@@ -4,6 +4,10 @@ class Loops
   {
     forLoopExample();
   }
+  public static void whleLoopExample()
+  {
+    // I'm showing Jeff cool shit
+  }
   public static void forLoopExample()
   {
     System.out.println("forLoopExample.. lets watch i!");
