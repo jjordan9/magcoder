@@ -6,17 +6,22 @@ class Calling
 		Scanner in = new Scanner(System.in);
 		char b=0;
 		System.out.println("Hello World!");
-		System.out.println("Enter a character");
+		System.out.println("Enter a number");
 		b=in.next().charAt(0);
 		meth2(b);
 	}
 	public static void meth2(char b)
 	{
-		if(b!='a')
+		if(b>55)
 		{
-		System.out.println("Hey You");
+			System.out.println("Over 55");
+		}
+		else if(b<50)
+		{
+			System.out.println("Under 50");
 		}
 		else
-			System.out.println("Boo");
+			System.out.println("Between 50 and 55");
+
 	}
 }

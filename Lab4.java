@@ -3,7 +3,7 @@ class Lab4
 {
 	public static void main(String[] args) 
 	{
-		char b=0;
+		char b;
 		b=isAbc();
 		isTwo(b);
 		isThree(b);
@@ -18,10 +18,10 @@ class Lab4
 	public static char isAbc()
 	{
 		Scanner in = new Scanner(System.in);
-		char b=0;
+		char p;
 		System.out.println("Enter a letter: ");
-		b=in.next().charAt(0);
-		return b;
+		p=in.next().charAt(0);
+		return p;
 	}
 	public static void isTwo(char b)
 	{

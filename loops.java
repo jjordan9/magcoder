@@ -1,7 +1,7 @@
 class Loops
 {
-  public static void main(String[] args)
-  {
+	public static void main(String[] args)
+	{
     //whileLoopExample();
     //forLoopExample();
 	whileLoopChallenge1();
@@ -12,8 +12,8 @@ class Loops
 	//  {
 	//		System.out.println("i is :"+i+", and isEven("+i+") is "+isEven(i)+".");
 	//  }
-  }
-  public static void whileLoopExample()
+ // }
+  /*public static void whileLoopExample()
   {
     System.out.println("whileLoopExample.. lets watch i!");
     int i = 0;
@@ -27,17 +27,17 @@ class Loops
 
     System.out.println("(end) int i is:"+i+", and boolean b is:"+(i != 10)+".");
 
-    System.out.println("finished whileLoopExample.");
-  }
-  public static boolean isEven(int x)
-  {
+    System.out.println("finished whileLoopExample.");*/
+	}
+	public static boolean isEven(int x)
+	{
 	  // this should return true if x is even
 	  // false if x is odd
 	  // implement this
 	return(x%2==0);
-  }
-  public static void whileLoopChallenge2()
-  {
+	}
+	public static void whileLoopChallenge2()
+	{
     //sum of even int between 1-10
 	int x=1;
 	int runningSum = 0;
@@ -55,21 +55,21 @@ class Loops
 	{
 		return(x%2!=0);
 	}
-	 public static void whileLoopChallenge3()
+	public static void whileLoopChallenge3()
 	{
-	int x=1;
-	int runningSum=0;
-	while(x<=10)
-	{
-		if(ifOdd(x))
+		int x=1;
+		int runningSum=0;
+		while(x<=10)
 		{
-			runningSum=runningSum+x;
+			if(ifOdd(x))
+			{
+				runningSum=runningSum+x;
+			}
+			x++;
 		}
-		x++;
-	{
-	System.out.println(runningSum);
+			System.out.println(runningSum);
 	}
-   public static void whileLoopChallenge1()
+	public static void whileLoopChallenge1()
 	{
 		int x=1;
 		int runningSum=0;
@@ -78,38 +78,41 @@ class Loops
 			runningSum=runningSum+x;
 			x++;
 		}
-			System.out.println(runningSum);
-		}
+		System.out.println(runningSum);
+	}
 	public static void whileLoopChallenge4()
 	{
 		int x=1;
 		runningCount=0;
 		while(x<100)
-			if(isPrime(x)=true)
 		{
-			runningCount=runningCount+1
+			if(isPrime(x))
+			runningCount=runningCount+1;
+			x++;
 		}
+			System.out.println(runningCount);
 	}
-
 	public static boolean isPrime(int x) 
-		{
-		if (n%2==0)
-			return false;
-		}
-    for(int i=3;i*i<=n;i+=2)
-		{
-        if(n%i==0)
-            return false;
-    }
-    return true;
+	{
+		int i;
+		if(n%2==0);
+			for(int i=3;i*i<=n;i+=2)
+			{
+				if(n%i==0)
+				return false;
+			}
+				return true;
+	}
+	
 }
+	
 		
 	
 			
 	
 
 	
-  public static void forLoopExample()
+ /* public static void forLoopExample()
   {
     System.out.println("forLoopExample.. lets watch i!");
     // for(expr1; expr2; expr3)
@@ -149,4 +152,4 @@ class Loops
     System.out.println("x is "+x);
     System.out.println("y is "+y);
   }
-}
+}*/
