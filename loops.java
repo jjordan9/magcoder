@@ -7,7 +7,7 @@ class Loops
 	whileLoopChallenge1();
 	whileLoopChallenge2();
 	whileLoopChallenge3();
-	whileLoopChallenge4();
+	forLoop1();
 	//for(int i = 0; i!= 100; i++)
 	//  {
 	//		System.out.println("i is :"+i+", and isEven("+i+") is "+isEven(i)+".");
@@ -51,7 +51,7 @@ class Loops
 	}
 	System.out.println(runningSum);
 	}
-	public static boolean ifOdd(int x)
+	public static boolean isOdd(int x)
 	{
 		return(x%2!=0);
 	}
@@ -61,7 +61,7 @@ class Loops
 		int runningSum=0;
 		while(x<=10)
 		{
-			if(ifOdd(x))
+			if(isOdd(x))
 			{
 				runningSum=runningSum+x;
 			}
@@ -80,30 +80,24 @@ class Loops
 		}
 		System.out.println(runningSum);
 	}
-	public static void whileLoopChallenge4()
+	public static void forLoop1()
 	{
-		int x=1;
-		runningCount=0;
-		while(x<100)
+		int x=0;
+		int runningSum=1;
+		while(x%2!=0)
 		{
-			if(isPrime(x))
-			runningCount=runningCount+1;
-			x++;
-		}
-			System.out.println(runningCount);
-	}
-	public static boolean isPrime(int x) 
-	{
-		int i;
-		if(n%2==0);
-			for(int i=3;i*i<=n;i+=2)
+			for(x=3;x<=9;x+=2)
 			{
-				if(n%i==0)
-				return false;
+				if(x*x%20)
+				{
+					runningSum=runningSum+1;
+				}
+			
 			}
-				return true;
+		}
+		System.out.println(runningSum);
 	}
-	
+		
 }
 	
 		

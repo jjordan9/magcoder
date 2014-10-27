@@ -1,4 +1,4 @@
-class Calling 
+class Loop1 
 {
 	public static void main(String[] args) 
 	{

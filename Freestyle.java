@@ -17,37 +17,27 @@ class Freestyle
 	avg=meth2(a,b,c);
 	min=meth3(a,b,c);
 	System.out.println(avg);
-	
 	if (avg>=50)
-	
 		System.out.println("word");
-	
 	else 
-	
 		System.out.println("nope");
 		System.out.println(min);
 	if(min<50)
-	
 		System.out.println("Ok");
-	
 	else
-	
 		System.out.println("No");
-
 	}
-
-
-		public static int meth2(int x,int y,int z)
-		{
-			int avg;
-			avg=(x+y+z)/3;
-			return avg;
-		}
-		public static int meth3(int d,int e,int f)
-		{
-			int min;
-			min=d-e-f;
-			return min;
-		}
+	public static int meth2(int x,int y,int z)
+	{
+		int avg;
+		avg=(x+y+z)/3;
+		return avg;
+	}
+	public static int meth3(int d,int e,int f)
+	{
+		int min;
+		min=d-e-f;
+		return min;
+	}
 
 }
