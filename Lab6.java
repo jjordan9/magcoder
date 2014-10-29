@@ -24,8 +24,8 @@ class Lab6
 		double futureValue=investmentAmount*power;
 		for(years=1;years<=30;years++)
 		{
-			//mult=monthlyInterestRate/100+1;
-			//power=Math.pow(mult, years);
+			mult=monthlyInterestRate/100+1;
+			power=Math.pow(mult, years);
 			futureValue=investmentAmount*power;
 			System.out.println(years+"\t\t"+twoDForm.format(futureValue));
 		}
