@@ -23,9 +23,9 @@ class Lab6
 		double investmentAmount, double monthlyInterestRate, int years)
 	{
 		double mult=monthlyInterestRate/100+1;
-		double power=Math.pow(mult, years);
+		int power=Math.pow(mult, years);
 		double futureValue=investmentAmount*power;
-		return (double) futureValue;
+		return (double)futureValue;
 	}
 }
 
