@@ -23,8 +23,7 @@ class Nametimesten
 		for(x=0;x<=4;++x)
 		{
 			prin=prin*(1+rate);
-	}
+		}
 	System.out.println("after "+x+" years the accumulation = $"+prin);
-
-}
+	}
 }

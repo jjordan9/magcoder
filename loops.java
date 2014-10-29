@@ -1,11 +1,19 @@
 class Loops
 {
-  public static void main(String[] args)
-  {
-    whileLoopExample();
+	public static void main(String[] args)
+	{
+    //whileLoopExample();
     //forLoopExample();
-  }
-  public static void whileLoopExample()
+	whileLoopChallenge1();
+	whileLoopChallenge2();
+	whileLoopChallenge3();
+	forLoop1();
+	//for(int i = 0; i!= 100; i++)
+	//  {
+	//		System.out.println("i is :"+i+", and isEven("+i+") is "+isEven(i)+".");
+	//  }
+ // }
+  /*public static void whileLoopExample()
   {
     System.out.println("whileLoopExample.. lets watch i!");
     int i = 0;
@@ -19,17 +27,86 @@ class Loops
 
     System.out.println("(end) int i is:"+i+", and boolean b is:"+(i != 10)+".");
 
-    System.out.println("finished whileLoopExample.");
-  }
-  public static void whileLoopChallenge1()
-  {
-    // Produce and print the sum of all numbers between 1 and 10
-    // Your output of the program should be one line:
-    // The sum of the numbers between 1 and 10 is X
-    // (where x is the sum)
-  }
+    System.out.println("finished whileLoopExample.");*/
+	}
+	public static boolean isEven(int x)
+	{
+	  // this should return true if x is even
+	  // false if x is odd
+	  // implement this
+	return(x%2==0);
+	}
+	public static void whileLoopChallenge2()
+	{
+    //sum of even int between 1-10
+	int x=1;
+	int runningSum = 0;
+	while(x<=10)
+	{
+		if(isEven(x))
+		{
+			runningSum=runningSum+x;
+		}
+		x++;
+	}
+	System.out.println(runningSum);
+	}
+	public static boolean isOdd(int x)
+	{
+		return(x%2!=0);
+	}
+	public static void whileLoopChallenge3()
+	{
+		int x=1;
+		int runningSum=0;
+		while(x<=10)
+		{
+			if(isOdd(x))
+			{
+				runningSum=runningSum+x;
+			}
+			x++;
+		}
+			System.out.println(runningSum);
+	}
+	public static void whileLoopChallenge1()
+	{
+		int x=1;
+		int runningSum=0;
+		while(x<=10)
+		{
+			runningSum=runningSum+x;
+			x++;
+		}
+		System.out.println(runningSum);
+	}
+	public static void forLoop1()
+	{
+		int x=0;
+		int runningSum=1;
+		while(x%2!=0)
+		{
+			for(x=3;x<=9;x+=2)
+			{
+				if(x*x%20)
+				{
+					runningSum=runningSum+1;
+				}
+			
+			}
+		}
+		System.out.println(runningSum);
+	}
+		
+}
+	
+		
+	
+			
+	
 
-  public static void forLoopExample()
+	
+ /* public static void forLoopExample()
   {
     System.out.println("forLoopExample.. lets watch i!");
     // for(expr1; expr2; expr3)
@@ -69,4 +146,4 @@ class Loops
     System.out.println("x is "+x);
     System.out.println("y is "+y);
   }
-}
+}*/

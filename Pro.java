@@ -21,36 +21,27 @@ class Pro
 			System.out.println("You have an a");
         }
 		else
-		{
-		if(avg>=80)
-		{
-			System.out.println("You have a b");
-		}
+			if(avg>=80)
+			{
+				System.out.println("You have a b");
+			}
 		else
-		{	
-		if(avg>=70)
-		{
-			System.out.println("You have a c");
-		}
+			if(avg>=70)
+			{
+				System.out.println("You have a c");
+			}
 		else
-	
-		if(avg>=65)
-		{
-		System.out.println("You have a d");
-		}
+			if(avg>=65)
+			{
+				System.out.println("You have a d");
+			}
 		else
-		{
 			System.out.println("Switch majors");
-		}
 	}
-		}
-	}
-
-
-		public static double meth2(int x,int y,int z)
+	public static double meth2(int x,int y,int z)
 	{
 		double avg;
-		avg=(double)(x+y+z)/3;
+		avg=(x+y+z)/3;
 		return avg;
 
 	}

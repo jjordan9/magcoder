@@ -12,14 +12,14 @@ class While
 		valuein=in.nextInt();
 		while(valuein != -99)
 		{
-			++6count;
+			++count;
 			sum=sum+valuein;
 			System.out.print("Enter a value here; -99 terminates: ");
 			valuein=in.nextInt();
+		}
 		//}
 		//avg=sum/count;
 		//System.out.println("average = "+avg);
 		System.out.println("# of values entered = "+count);
-}
-}
+	}
 }
