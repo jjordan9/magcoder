@@ -35,6 +35,8 @@ class Lab4
 			System.out.println("The corresponding number is 9");								
 		else
 			System.out.println(b+" Is an invalid input");
+			System.out.println("Enter a number");
+			
 	
 	}
 }
