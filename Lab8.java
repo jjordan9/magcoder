@@ -1,3 +1,4 @@
+import java.util.Arrays;
 import java.util.Scanner;
 class Lab8 
 {
@@ -28,33 +29,47 @@ class Lab8
     }
     CountThem(integer_inputs);
   }
+  public static void prettyPrint(int compare, int count)
+  {
+    if(compare <= 0) // we don't want to print about 0's
+      return;
+
+    if(compare > 100)
+      return;
+
+    if(count==1) // time(s)
+      System.out.println(compare+" occurs "+count+" time"); 
+    else
+      System.out.println(compare+" occurs "+count+" times"); 
+  }
   public static void CountThem(int[] a)
   {
     SortThem(a);
     int count, compare;
+
     count = 1;
     compare = a[0];
-    for(int x=1;x<a.length;++x)
+
+    for(int x=1; x<a.length;++x)
     {
       if(compare == a[x])
+      {
         ++count;
-      else if(count==1)
-      {
-        System.out.println(compare+" occurs "+count+" time");
-        compare=a[x];
-        count=1;
       }
-      else
-      {
-        System.out.println(compare+" occurs "+count+" times");
-        compare=a[x];
-        count=1;
+      else {
+        prettyPrint(compare,count);
+        count = 1;
       }
+      compare = a[x];
     }
-
+    prettyPrint(compare,count);
   }
   public static void SortThem(int[] a)
   {
+    System.out.println("[DEBUG] Here is the array before sorting:");
+    // System.out.println(a); // poor way to print an array, prints the object id instead of the contents
+    // System.out.println(a.toString()); // poor way to print an array, prints the object id instead of the contents
+    System.out.println(Arrays.toString(a)); // yahtzee!!
     int hold;
     for(int x=0;x<(a.length)-1;++x)
     {
@@ -66,6 +81,8 @@ class Lab8
         x=-1;
       }
     }
+    System.out.println("[DEBUG] Here is the array after sorting:");
+    System.out.println(Arrays.toString(a)); // yahtzee!!
   }
 
 }
