@@ -2,7 +2,8 @@
 import java.util.Date;
 class Account
 {
-  //note that these are not static!!
+  // Instance Variables
+  // note that these are not static!!
 	private int id;
 	private double balance;
 	private double annualInterestRate;
