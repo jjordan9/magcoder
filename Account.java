@@ -72,12 +72,18 @@ class Account
 	}
 	public double withdraw(double w)
 	{
+		double balance;
+		balance=getBal();
 		w = 2500;
-		double newbalance=balance-w;
-		return newbalance;
+		balance=balance-w;
+		return balance;
 	}
 	public void deposit(double d)
 	{
+		double balance,w;
+		balance=withdraw(w);
+		d = 3000;
 		balance=balance+d;
+		
 	}
 }
