@@ -2,39 +2,54 @@
 import java.util.Date;
 class Account
 {
-	private static int id;
-	private static double balance;
-	private static double annualInterestRate;
-	private static Date dateCreated;
-    public Date Lab12()
-	{
-		id=0;
-		balance=0;
-		annualInterestRate=0;
-		dateCreated = new Date();
-		return dateCreated;
-	}
-	public Date Lab12(int i,double bal)
+  //note that these are not static!!
+	private int id;
+	private double balance;
+	private double annualInterestRate;
+	private Date dateCreated;
+  
+  public String toString()
+  {
+    String retval = "";
+    retval += "\n";
+    retval += "*************************\n";
+    retval += "id\t\t"+getId()+"\n";
+    retval += "balance\t\t"+getBal()+"\n";
+    retval += "annualInterestRate\t\t"+getRate()+"\n";
+    retval += "monthlyInterestRate\t\t"+getMonthlyRate()+"\n";
+    retval += "monthlyInterest\t\t"+getInterest()+"\n";
+    retval += "dateCreated\t\t"+dateCreated+"\n";
+    retval += "*************************\n";
+    retval += "\n";
+    return retval;
+  }
+
+  // Constructor #2
+  public Account(int i, double bal)
 	{
 		id=i;
  		balance=bal;
 		annualInterestRate=0;
 		dateCreated = new Date();
-		return dateCreated;
+	}
+  // Constructor #1
+  public Account()
+	{
+		id=0;
+		balance=0;
+		annualInterestRate=0;
+		dateCreated = new Date();
 	}
 	public double getId()
 	{
-		id = 1122;
 		return id;
 	}
 	public double getBal()
 	{
-		double balance = 20000;
 		return balance;
 	}
 	public double getRate()
 	{
-		annualInterestRate=4.5;
 		return annualInterestRate;
 	}
 	public void setId(int i)
@@ -48,7 +63,6 @@ class Account
 	public void setRate(double r)
 	{
 		annualInterestRate=r;
-		r=4.5;
 	}
 	public Date getDate()
 	{
@@ -60,30 +74,23 @@ class Account
 	}
 	public double getMonthlyRate()
 	{
-		annualInterestRate=4.5;
 		double monthlyRate=(annualInterestRate/12);
 		return monthlyRate;
-		
 	}
 	public double getInterest()
 	{
-	
 		return (balance*(annualInterestRate/12));
 	}
+  // Note that i've made withdraw return the new balance
 	public double withdraw(double w)
 	{
-		double balance;
-		balance=getBal();
-		w = 2500;
-		balance=balance-w;
-		return balance;
+    balance = balance - w;
+    return balance;
 	}
-	public void deposit(double d)
+  // Note that i've made deposit return the new balance
+	public double deposit(double d)
 	{
-		double balance,w;
-		balance=withdraw(w);
-		d = 3000;
-		balance=balance+d;
-		
+    balance = balance + d;
+    return balance;
 	}
 }

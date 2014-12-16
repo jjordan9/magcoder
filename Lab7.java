@@ -58,7 +58,3 @@ class Lab7
 		System.out.println(translated_string);
 	}
 }
-/*==============================================================
-Enter a string: 1-800-Flowers
-1-800-3569377
-
