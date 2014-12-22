@@ -1,36 +1,40 @@
 import java.util.Scanner;
 import java.util.Date;
-class Account
+class AccountHelp
 {
+  // Instance Variables
+  // note that these are not static!!
 	private int id;
 	private double balance;
 	private double annualInterestRate;
 	private Date dateCreated;
   
-	public String toString()
-	{
-		String retval = "";
-		retval += "\n";
-		retval += "*************************\n";
-		retval += "id\t\t"+getId()+"\n";
-		retval += "balance\t\t"+getBal()+"\n";
-		retval += "annualInterestRate\t\t"+getRate()+"\n";
-		retval += "monthlyInterestRate\t\t"+getMonthlyRate()+"\n";
-		retval += "monthlyInterest\t\t"+getInterest()+"\n";
-		retval += "dateCreated\t\t"+dateCreated+"\n";
-		retval += "*************************\n";
-		retval += "\n";
-		return retval;
-	}
+  public String toString()
+  {
+    String retval = "";
+    retval += "\n";
+    retval += "*************************\n";
+    retval += "id\t\t"+getId()+"\n";
+    retval += "balance\t\t"+getBal()+"\n";
+    retval += "annualInterestRate\t\t"+getRate()+"\n";
+    retval += "monthlyInterestRate\t\t"+getMonthlyRate()+"\n";
+    retval += "monthlyInterest\t\t"+getInterest()+"\n";
+    retval += "dateCreated\t\t"+dateCreated+"\n";
+    retval += "*************************\n";
+    retval += "\n";
+    return retval;
+  }
 
-	public Account(int i, double bal)
+  // Constructor #2
+  public Account(int i, double bal)
 	{
-		int id=i;
+		id=i;
  		balance=bal;
 		annualInterestRate=0;
 		dateCreated = new Date();
 	}
-	public Account()
+  // Constructor #1
+  public Account()
 	{
 		id=0;
 		balance=0;
@@ -78,11 +82,13 @@ class Account
 	{
 		return (balance*(annualInterestRate/12));
 	}
+  // Note that i've made withdraw return the new balance
 	public double withdraw(double w)
 	{
     balance = balance - w;
     return balance;
 	}
+  // Note that i've made deposit return the new balance
 	public double deposit(double d)
 	{
     balance = balance + d;

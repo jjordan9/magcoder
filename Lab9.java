@@ -6,14 +6,15 @@ class Lab9
 	{
 		Calendar calendar = new GregorianCalendar();
 		System.out.println("YEAR: " + calendar.get(Calendar.YEAR));
-		if(calendar.get(Calendar.MONTH) == Calendar.DECEMBER)
-		{
-			System.out.println("MONTH: " + 12);
-		}
+		int a=calendar.get(Calendar.MONTH);
+		System.out.println("MONTH: " + (a+1));
 		System.out.println("DAY OF MONTH: " + calendar.get(Calendar.DAY_OF_MONTH));
 		Calendar cal = Calendar.getInstance();
-		cal.setTimeInMillis(1234567898765L);
-		System.out.println("After Setting Time:  " + cal.getTime());
+		calendar.setTimeInMillis(1234567898765L);
+		System.out.println("After Setting Time:  " + calendar.getTime());
+		
+	
+
 	}
 }
 /*=================================================================================

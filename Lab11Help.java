@@ -1,5 +1,5 @@
 import java.util.Scanner;
-class Lab11
+class Lab11Help
 {
   public static String[][] capitals = {
     {"Nevada","Carson City"},
@@ -16,6 +16,8 @@ class Lab11
     {
       String state = capitals[i][0];
       String capital = capitals[i][1];
+
+      //or to put another way
       String[] pair = capitals[i]; 
       state = pair[0];
       capital = pair[1];
@@ -40,14 +42,27 @@ class Lab11
 	public static void main(String[] args) 
 	{
     a();
-   }
+    /*
+		int x;
+		String[]states = {"Nevada","Alaska","Arizona","Denver","New Jersey","New York",
+							"Pennsylvania","Connecticut","Delaware","Virginia"};
+		String[]capitals = {"Carson City","Juneau","Phoenix","Denver","Trenton","Albany",
+							"Harrisburg","Hartford","Dover","Richmond"};
+		Scanner in = new Scanner(System.in);
+		String a;
+		for(x=0;x<states.length;++x)
+		{
+			System.out.print("What is the state capital of "+states[x]+"?");
+			a=in.nextLine();
+			if(a==capitals[x])
+			{
+				System.out.println("Your answer is correct");
+			}
+			else
+			{
+				System.out.println("The correct answer should be "+capitals[x]);
+			}
+		}
+    */
+	}
 }
-/*===============================================================
-What is the state capital of Nevada?CarsonCity
-The capital of Nevada is Carson City.
-What is the state capital of Alaska?Howell
-The capital of Alaska is Juneau.
-What is the state capital of Arizona?Phoenix
-Correct Guess
-You got 1 right.
-You got 2 right.*/
