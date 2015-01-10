@@ -14,15 +14,26 @@ class Test3quest1
 		int x;
 		for(x=0;x<a.length;++x)
 		{
-			int ch = a[x];
+			//int ch = a[x];
 			System.out.println("Enter a number");
-			ch = in.nextInt();
+			//ch = in.nextInt();
+			a[x] = in.nextInt();
+			//if(ch==24)
+			//{
+				//System.out.println("24 is located in the "+x+" location of array a");
+			//}
+			//System.out.println("24 not in array a");
+		}
+		for(x=0;x<a.length;++x)
+		{
+			int ch = a[x];
 			if(ch==24)
 			{
 				System.out.println("24 is located in the "+x+" location of array a");
-			}
-			System.out.println("24 not in array a");
+			{
+						
 		}
-		
+
 	}
+
 }
