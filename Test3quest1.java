@@ -11,29 +11,32 @@ class Test3quest1
 	{
 		Scanner in = new Scanner(System.in);
 		int a[] = new int[10];
-		int x;
-		for(x=0;x<a.length;++x)
+		int i = 0,key = 24;
+		for(i=0; i<a.length; ++i)
 		{
-			//int ch = a[x];
-			System.out.println("Enter a number");
-			//ch = in.nextInt();
-			a[x] = in.nextInt();
-			//if(ch==24)
-			//{
-				//System.out.println("24 is located in the "+x+" location of array a");
-			//}
-			//System.out.println("24 not in array a");
+			System.out.println("Enter a number");;
+			a[i] = in.nextInt();
 		}
-		for(x=0;x<a.length;++x)
-		{
-			int ch = a[x];
-			if(ch==24)
-			{
-				System.out.println("24 is located in the "+x+" location of array a");
-			{
-						
-		}
-
+		boolean found = false;
+		isthere(a, key, found);
 	}
-
+	public static void isthere(int [] a, int key, boolean found)
+	{
+		
+       for (int index = 0; index < a.length; index++)
+      {
+          if( a[index]== key )
+		  {
+			   found = true;
+			   System.out.println("24 is located at the "+index+" location of array a");
+          }
+	  }
+	  if(found)
+	  {
+		  System.out.println();
+	  }
+	  else
+		System.out.println("24 is not in array a ");
+	}
 }
+		
