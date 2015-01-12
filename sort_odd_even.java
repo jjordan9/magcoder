@@ -21,37 +21,66 @@ class sort_odd_even
 		}
 		for(int x=0;x<a.length;++x)		
 		{
-			int count=0;
-			if(a[x]<0)
+			if(a[x]<0)								//I'm getting closer but i have to figure out how to
 			{
 				negativeList[x]=a[x];
-			}
-			else if(a[x]%2==0)
+													//ajust the index so that as the values satisfy the 
+			}										//conditions of one array that the others dont go forward
+			else if(a[x]%2==0)						//with their indexes as well leaving zeros in those indexes
 			{
 				evenList[x]=a[x];
+				
 			}
 			else
 			{
 				oddList[x]=a[x];
+
 			}
 											
 		}
 		System.out.print("EvenList: ");
 		for(int x=0;x<evenList.length;++x)
-		{			
+		{
+			if(evenList[x]!= 0)
 			System.out.print(evenList[x]);	
 		}
 		System.out.println();
 		System.out.print("OddList: ");
 		for(int x=0;x<oddList.length;++x)
 		{
+			if(oddList[x] != 0)
 			System.out.print(oddList[x]);	
 		}
 		System.out.println();
 		System.out.print("NegativeList: ");
 		for(int x=0;x<negativeList.length;++x)
 		{
+			if(negativeList[x]!= 0)
 			System.out.print(negativeList[x]);	
 		}
 	}
 }
+//output is
+/*Enter a #
+-1
+Enter a #
+1
+Enter a #
+2
+Enter a #
+3
+Enter a #
+4
+Enter a #
+5
+Enter a #
+6
+Enter a #
+7
+Enter a #
+8
+Enter a #
+9
+EvenList: 0020406080
+OddList: 0103050709
+NegativeList: -1000000000*/
