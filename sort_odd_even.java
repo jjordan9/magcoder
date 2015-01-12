@@ -6,11 +6,11 @@
 //have been entered.
 import java.util.Scanner;
 class sort_odd_even 
-{												//So i have been constantly updating my comments to u on this
-	public static void main(String[] args)		//program..I have met all requirements of the problem but think 
-	{											//there has be a way to do this w/o getting rid of the zeros 
-		int a[] = new int[10];					//before printing..I spent many hours on this program..I have to 
-		int evenList[] = new int[a.length];		//get better..
+{												
+	public static void main(String[] args)		
+	{											  
+		int a[] = new int[10];					 
+		int evenList[] = new int[a.length];		
 		int oddList[] = new int[a.length];
 		int negativeList[] = new int[a.length];
 		Scanner in = new Scanner(System.in);
