@@ -6,11 +6,11 @@
 //have been entered.
 import java.util.Scanner;
 class sort_odd_even 
-{
-	public static void main(String[] args) 
-	{
-		int a[] = new int[10];
-		int evenList[] = new int[a.length];
+{												//So i have been constantly updating my comments to u on this
+	public static void main(String[] args)		//program..I have met all requirements of the problem but think 
+	{											//there has be a way to do this w/o getting rid of the zeros 
+		int a[] = new int[10];					//before printing..I spent many hours on this program..I have to 
+		int evenList[] = new int[a.length];		//get better..
 		int oddList[] = new int[a.length];
 		int negativeList[] = new int[a.length];
 		Scanner in = new Scanner(System.in);
@@ -21,51 +21,48 @@ class sort_odd_even
 		}
 		for(int x=0;x<a.length;++x)		
 		{
-			if(a[x]<0)								//I'm getting closer but i have to figure out how to
+			if(a[x]<0)				
 			{
-				negativeList[x]=a[x];
-													//ajust the index so that as the values satisfy the 
-			}										//conditions of one array that the others dont go forward
-			else if(a[x]%2==0)						//with their indexes as well leaving zeros in those indexes
+				negativeList[x]=a[x];									
+			}	
+			else if(a[x]%2==0)					
 			{
-				evenList[x]=a[x];
-				
+				evenList[x]=a[x];	
 			}
 			else
 			{
 				oddList[x]=a[x];
-
-			}
-											
+			}									
 		}
 		System.out.print("EvenList: ");
 		for(int x=0;x<evenList.length;++x)
 		{
 			if(evenList[x]!= 0)
-			System.out.print(evenList[x]);	
+			System.out.print(evenList[x]+" ");	
 		}
 		System.out.println();
 		System.out.print("OddList: ");
 		for(int x=0;x<oddList.length;++x)
 		{
 			if(oddList[x] != 0)
-			System.out.print(oddList[x]);	
+			System.out.print(oddList[x]+" ");	
 		}
 		System.out.println();
 		System.out.print("NegativeList: ");
 		for(int x=0;x<negativeList.length;++x)
 		{
 			if(negativeList[x]!= 0)
-			System.out.print(negativeList[x]);	
+			System.out.print(negativeList[x]+" ");
 		}
 	}
 }
-//output is
-/*Enter a #
+/*
+Enter a #
 -1
 Enter a #
 1
 Enter a #
+
 2
 Enter a #
 3
@@ -81,6 +78,7 @@ Enter a #
 8
 Enter a #
 9
-EvenList: 0020406080
-OddList: 0103050709
-NegativeList: -1000000000*/
+EvenList: 2468
+OddList: 13579
+NegativeList: -1
+*/

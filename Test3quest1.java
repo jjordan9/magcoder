@@ -23,12 +23,12 @@ class Test3quest1
 	public static void isthere(int [] a, int key, boolean found)
 	{
 		
-       for (int index = 0; index < a.length; index++)
+       for (int i = 0; i < a.length; i++)
       {
-          if( a[index]== key )
+          if( a[i]== key )
 		  {
 			   found = true;
-			   System.out.println("24 is located at the "+index+" location of array a");
+			   System.out.println("24 is located at the "+i+" location of array a");
           }
 	  }
 	  if(found)
