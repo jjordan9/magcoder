@@ -19,15 +19,22 @@ class sort_odd_even
 			System.out.println("Enter a #");
 			a[x] = in.nextInt();
 		}
-		for(int x=0;x<a.length;++x)				//<=I'm pretty sure that this is where my shit is
-		{											
-			if(a[x]<0)							
-				a[x]=negativeList[x];
-			else if(a[x]%2==0)					//<=flawed..I googled the shit out of it but still no 
-				a[x]=evenList[x];
+		for(int x=0;x<a.length;++x)		
+		{
+			int count=0;
+			if(a[x]<0)
+			{
+				negativeList[x]=a[x];
+			}
+			else if(a[x]%2==0)
+			{
+				evenList[x]=a[x];
+			}
 			else
-				a[x]=oddList[x];
-												//<=good...Let me know wen u can..Thanks!!!!
+			{
+				oddList[x]=a[x];
+			}
+											
 		}
 		System.out.print("EvenList: ");
 		for(int x=0;x<evenList.length;++x)
@@ -48,28 +55,3 @@ class sort_odd_even
 		}
 	}
 }
-/*output is
-Enter a #
--1
-Enter a #
-1
-Enter a #
-2
-Enter a #
-
-3
-Enter a #
-4
-Enter a #
-5
-Enter a #
-6
-Enter a #
-7
-Enter a #
-8
-Enter a #
-9
-EvenList: 0000000000
-OddList: 0000000000
-NegativeList: 0000000000*/
