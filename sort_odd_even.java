@@ -14,25 +14,20 @@ class sort_odd_even
 		int oddList[] = new int[a.length];
 		int negativeList[] = new int[a.length];
 		Scanner in = new Scanner(System.in);
-		for(int x=0;x<a.length;++x)
-		{
-			System.out.println("Enter a #");
-			a[x] = in.nextInt();
-		}
+		System.out.print("Enter a ten numbers: ");
+		//for(int x=0;x<a.length;++x)
+		//{
+			//a[x] = in.nextInt();
+		//}
 		for(int x=0;x<a.length;++x)		
 		{
+			a[x] = in.nextInt();
 			if(a[x]<0)				
-			{
-				negativeList[x]=a[x];									
-			}	
+				negativeList[x]=a[x];										
 			else if(a[x]%2==0)					
-			{
 				evenList[x]=a[x];	
-			}
 			else
-			{
-				oddList[x]=a[x];
-			}									
+				oddList[x]=a[x];									
 		}
 		System.out.print("EvenList: ");
 		for(int x=0;x<evenList.length;++x)
@@ -57,28 +52,8 @@ class sort_odd_even
 	}
 }
 /*
-Enter a #
--1
-Enter a #
-1
-Enter a #
-
-2
-Enter a #
-3
-Enter a #
-4
-Enter a #
-5
-Enter a #
-6
-Enter a #
-7
-Enter a #
-8
-Enter a #
-9
-EvenList: 2468
-OddList: 13579
+Enter a ten numbers: -1 2 3 4 5 6 7 8 9 9
+EvenList: 2 4 6 8
+OddList: 3 5 7 9 9
 NegativeList: -1
 */
