@@ -15,10 +15,6 @@ class sort_odd_even
 		int negativeList[] = new int[a.length];
 		Scanner in = new Scanner(System.in);
 		System.out.print("Enter a ten numbers: ");
-		//for(int x=0;x<a.length;++x)
-		//{
-			//a[x] = in.nextInt();
-		//}
 		for(int x=0;x<a.length;++x)		
 		{
 			a[x] = in.nextInt();
