@@ -14,7 +14,13 @@ class odd_even_neg_1
 		for(int x=0;x<a.length;++x)		
 		{
 			a[x] = in.nextInt();
-            // TODO MAG: in this loop increment all the counts
+			if(a[x]<0)
+				neg_count++;
+			else if((a[x]>0)&&(a[x]%2==0))
+				even_count++;
+			else if((a[x]>0)&&(a[x]%2!=0))
+				odd_count++;
+				 // TODO MAG: in this loop increment all the counts
 		}
         // at this point the counts should be set properly
 		int oddList[] = new int[odd_count];
@@ -67,9 +73,8 @@ class odd_even_neg_1
 	}
 }
 /*
-Enter a ten numbers: -1 1 2 3 4 5 6 7 8 9
-EvenList: 2 4 6 8 0 0 0 0 0 0
-OddList: 1 3 5 7 9 0 0 0 0 0
-NegativeList: -1 0 0 0 0 0 0 0 0 0
+Enter a ten numbers: -1 -33 100 4 5 6 7 8 9 9
+EvenList: 100 4 6 8
+OddList: 5 7 9 9
+NegativeList: -1 -33
 */
-	
